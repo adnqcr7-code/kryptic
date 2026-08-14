@@ -120,3 +120,8 @@ The most useful early contribution is a reproducible issue or a small fixture th
 ## Source material
 
 The older [Kairos repository](https://github.com/adnqcr7-code/kairos) is kept in a separate reference directory during development. Kryptic will reuse sound local-first and safety patterns without copying the entire Kairos control plane.
+
+## Website
+
+The Kryptic project website lives in the [`website/`](./website) directory and is deployed from the same repository.
+
