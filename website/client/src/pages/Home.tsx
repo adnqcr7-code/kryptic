@@ -47,7 +47,7 @@ export default function Home() {
       <header className="relative z-20 border-b border-ink/10 bg-paper/90 backdrop-blur-sm">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between px-5 py-4 lg:px-10">
           <a href="#top" className="group flex items-center gap-3" aria-label="Kryptic home">
-            <img src="/manus-storage/kryptic-mark_aa2b7dea.png" alt="" className="h-9 w-9 object-contain" />
+            <img src="/assets/kryptic-mark.svg" alt="" className="h-9 w-9 object-contain mix-blend-screen" />
             <span className="font-display text-lg font-bold tracking-[-0.03em]">kryptic<span className="text-orange">/</span></span>
           </a>
           <nav className="hidden items-center gap-8 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-ink/60 md:flex" aria-label="Primary navigation">
@@ -77,8 +77,8 @@ export default function Home() {
 
         <div className="min-w-0">
           <section className="relative min-h-[680px] border-b border-ink/10 px-5 pb-20 pt-14 lg:px-16 lg:pb-28 lg:pt-20">
-            <div className="pointer-events-none absolute inset-y-0 right-0 -z-0 hidden w-[58%] overflow-hidden lg:block">
-              <img src="/manus-storage/kryptic-hero-atlas_95c26a63.png" alt="Abstract Kryptic engineering atlas diagram" className="h-full w-full object-cover object-left opacity-95 mix-blend-multiply" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 -z-0 hidden w-[58%] overflow-hidden bg-blueprint/35 lg:block">
+              <img src="/assets/kryptic-hero-atlas.png" alt="Abstract Kryptic engineering atlas diagram" className="h-full w-full object-cover object-left opacity-20 mix-blend-screen" />
             </div>
             <div className="relative z-10 max-w-3xl">
               <div className="mb-9 flex items-center gap-3 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-slate">
@@ -86,7 +86,7 @@ export default function Home() {
                 Open-source engineering agent / v1.0.2
               </div>
               <h1 className="max-w-4xl font-display text-[clamp(3.4rem,8vw,8rem)] font-bold leading-[0.88] tracking-[-0.075em] text-ink">
-                Agents can propose.<br /><span className="text-slate">Kryptic has to</span><br /><span className="relative inline-block">prove.<span className="absolute -bottom-2 left-1 h-3 w-[calc(100%-0.2rem)] bg-lime/70 lg:-bottom-3 lg:h-5" /></span>
+                Agents can propose.<br /><span className="text-lime">Kryptic has to</span><br /><span className="relative inline-block">prove.<span className="absolute -bottom-2 left-1 h-3 w-[calc(100%-0.2rem)] bg-lime/70 lg:-bottom-3 lg:h-5" /></span>
               </h1>
               <p className="mt-10 max-w-xl text-lg leading-relaxed text-ink/70 lg:text-xl">A local-first AI engineering agent for developers who want actions proven, changes recoverable, and benchmarks reproducible.</p>
               <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -139,7 +139,7 @@ export default function Home() {
                 <div className="absolute right-0 top-0 h-40 w-40 translate-x-1/4 -translate-y-1/4 rounded-full border border-lime/30" />
                 <div className="absolute right-10 top-10 h-20 w-20 rounded-full border border-lime/20" />
                 <div className="relative flex items-center justify-between border-b border-paper/15 pb-5 font-mono text-[10px] uppercase tracking-[0.18em] text-paper/55"><span>verification trace</span><span className="text-lime">live / local</span></div>
-                <img src="/manus-storage/kryptic-proof-panel_75cfe551.png" alt="Four-stage verification workflow diagram" className="my-8 h-auto w-full opacity-95 mix-blend-screen" />
+                <img src="/assets/kryptic-proof-panel.png" alt="Four-stage verification workflow diagram" className="my-8 h-auto w-full opacity-95 mix-blend-screen" />
                 <div className="grid grid-cols-3 gap-4 border-t border-paper/15 pt-5 font-mono text-[10px] uppercase tracking-[0.15em] text-paper/45"><span><b className="block text-lg text-lime">0</b>claims</span><span><b className="block text-lg text-paper">4</b>stages</span><span><b className="block text-lg text-paper">1</b>evidence trail</span></div>
               </div>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">

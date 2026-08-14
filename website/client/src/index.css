@@ -29,34 +29,34 @@
 
 :root {
   --radius: 0.2rem;
-  --paper: oklch(0.965 0.018 92);
-  --ink: oklch(0.19 0.018 75);
-  --slate: oklch(0.39 0.07 245);
-  --blueprint: oklch(0.9 0.035 225);
-  --lime: oklch(0.9 0.21 119);
-  --orange: oklch(0.69 0.17 48);
+  --paper: oklch(0.14 0.018 258);
+  --ink: oklch(0.95 0.012 96);
+  --slate: oklch(0.72 0.08 224);
+  --blueprint: oklch(0.19 0.035 247);
+  --lime: oklch(0.93 0.2 112);
+  --orange: oklch(0.74 0.17 49);
   --background: var(--paper);
   --foreground: var(--ink);
-  --card: oklch(0.98 0.012 92);
+  --card: oklch(0.18 0.022 258);
   --card-foreground: var(--ink);
-  --popover: oklch(0.98 0.012 92);
+  --popover: oklch(0.18 0.022 258);
   --popover-foreground: var(--ink);
   --primary: var(--ink);
   --primary-foreground: var(--paper);
-  --secondary: var(--blueprint);
+  --secondary: oklch(0.23 0.03 250);
   --secondary-foreground: var(--ink);
-  --muted: oklch(0.92 0.018 92);
-  --muted-foreground: oklch(0.48 0.025 75);
+  --muted: oklch(0.22 0.02 258);
+  --muted-foreground: oklch(0.68 0.018 258);
   --accent: var(--lime);
   --accent-foreground: var(--ink);
-  --border: oklch(0.19 0.018 75 / 18%);
-  --input: oklch(0.19 0.018 75 / 22%);
+  --border: oklch(0.95 0.012 96 / 18%);
+  --input: oklch(0.95 0.012 96 / 22%);
   --ring: var(--slate);
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; background: var(--paper); font-family: "Space Grotesk", sans-serif; }
+body { margin: 0; min-width: 320px; background: var(--paper); color: var(--ink); font-family: "Space Grotesk", sans-serif; }
 button, a { -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 2px solid var(--slate); outline-offset: 3px; }
 
@@ -68,11 +68,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 @layer utilities {
   .bg-paper { background-color: var(--paper); }
-  .bg-ink { background-color: var(--ink); }
+  .bg-ink { background-color: oklch(0.08 0.022 255); }
   .bg-lime { background-color: var(--lime); }
   .bg-blueprint { background-color: var(--blueprint); }
   .text-ink { color: var(--ink); }
-  .text-paper { color: var(--paper); }
+  .text-paper { color: var(--ink); }
   .text-slate { color: var(--slate); }
   .text-lime { color: var(--lime); }
   .text-orange { color: var(--orange); }
@@ -81,9 +81,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .atlas-grain {
-  background-image: url("/manus-storage/kryptic-paper-grid_81454651.png");
+  background-image: url("/assets/kryptic-paper-grid.png");
   background-size: 720px auto;
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
 }
 
 @media (prefers-reduced-motion: no-preference) {
