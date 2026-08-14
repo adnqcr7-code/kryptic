@@ -78,7 +78,7 @@ export default function Home() {
         <div className="min-w-0">
           <section className="relative min-h-[680px] border-b border-ink/10 px-5 pb-20 pt-14 lg:px-16 lg:pb-28 lg:pt-20">
             <div className="pointer-events-none absolute inset-y-0 right-0 -z-0 hidden w-[58%] overflow-hidden bg-blueprint/35 lg:block">
-              <img src="/assets/kryptic-hero-atlas.png" alt="Abstract Kryptic engineering atlas diagram" className="h-full w-full object-cover object-left opacity-20 mix-blend-screen" />
+              <img src="/assets/kryptic-hero-atlas.jpg" alt="Abstract Kryptic engineering atlas diagram" className="h-full w-full object-cover object-left opacity-20 mix-blend-screen" />
             </div>
             <div className="relative z-10 max-w-3xl">
               <div className="mb-9 flex items-center gap-3 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-slate">
@@ -139,7 +139,7 @@ export default function Home() {
                 <div className="absolute right-0 top-0 h-40 w-40 translate-x-1/4 -translate-y-1/4 rounded-full border border-lime/30" />
                 <div className="absolute right-10 top-10 h-20 w-20 rounded-full border border-lime/20" />
                 <div className="relative flex items-center justify-between border-b border-paper/15 pb-5 font-mono text-[10px] uppercase tracking-[0.18em] text-paper/55"><span>verification trace</span><span className="text-lime">live / local</span></div>
-                <img src="/assets/kryptic-proof-panel.png" alt="Four-stage verification workflow diagram" className="my-8 h-auto w-full opacity-95 mix-blend-screen" />
+                <img src="/assets/kryptic-proof-panel.jpg" alt="Four-stage verification workflow diagram" className="my-8 h-auto w-full opacity-95 mix-blend-screen" />
                 <div className="grid grid-cols-3 gap-4 border-t border-paper/15 pt-5 font-mono text-[10px] uppercase tracking-[0.15em] text-paper/45"><span><b className="block text-lg text-lime">0</b>claims</span><span><b className="block text-lg text-paper">4</b>stages</span><span><b className="block text-lg text-paper">1</b>evidence trail</span></div>
               </div>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">

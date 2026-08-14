@@ -81,7 +81,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .atlas-grain {
-  background-image: url("/assets/kryptic-paper-grid.png");
+  background-image: url("/assets/kryptic-paper-grid.jpg");
   background-size: 720px auto;
   mix-blend-mode: screen;
 }
