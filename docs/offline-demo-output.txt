@@ -1,0 +1,27 @@
+
+> kryptic@1.0.1 demo
+> node src/cli.js demo
+
+Kryptic offline demo
+No provider key, Docker daemon, browser, or network access is required.
+
+1. Inspecting workspace boundary and command policy...
+2. Applying an approved edit inside a transaction...
+3. Running verification and forcing a controlled failure...
+4. Rolling back the failed edit...
+5. Resuming an interrupted run without losing action indexes...
+6. Repairing a small failing Node.js fixture and verifying it...
+
+PASS  path traversal refusal
+PASS  secret-file refusal
+PASS  destructive-command refusal
+PASS  network-command refusal
+PASS  valid action acceptance
+PASS  invalid action rejection
+PASS  absolute-path refusal
+PASS  null-byte refusal
+PASS  transactional rollback
+PASS  resume index integrity
+PASS  coding fixture repair
+
+11/11 offline checks passed.

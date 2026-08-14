@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased — adoption and credibility
+
+### Added
+
+Added a no-key offline demo at `npm run demo`, a five-minute walkthrough in `DEMO.md`, a measurable roadmap, a comparative benchmark task specification, and a strict result validator. The CI workflow now runs the regression suite, deterministic benchmark, offline demo, and v1 release gate. The README links the adoption path, roadmap, contribution guidance, and security boundaries.
+
+### Verified
+
+The offline demo exercises the real workspace, command-policy, rollback, resume, and coding-fixture paths and currently reports 11/11 checks passing. Comparative task definitions are published without fabricated competitor results; cross-agent claims remain pending repeated clean-snapshot runs under identical conditions.
+
 ## 1.0.1-security-hardening — 2026-08-14
 
 ### Fixed

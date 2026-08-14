@@ -10,15 +10,17 @@ function run(args, options = {}) {
 function json(args) { return JSON.parse(run(args)); }
 
 const version = run(['version']).trim();
-if (version !== 'Kryptic v1.0.0') throw new Error(`Unexpected version output: ${version}`);
+if (version !== 'Kryptic v1.0.1') throw new Error(`Unexpected version output: ${version}`);
 const help = run(['--help']);
-for (const required of ['kryptic "task"', 'kryptic chat', 'kryptic setup', 'kryptic fix', 'kryptic test', 'kryptic doctor', 'kryptic history']) {
+for (const required of ['kryptic "task"', 'kryptic chat', 'kryptic setup', 'kryptic fix', 'kryptic test', 'kryptic doctor', 'kryptic history', 'kryptic demo']) {
   if (!help.includes(required)) throw new Error(`Help is missing: ${required}`);
 }
 const setup = json(['setup', '--workspace', root]);
 if (!['ready', 'needs_attention', 'blocked'].includes(setup.status)) throw new Error(`Invalid setup status: ${setup.status}`);
 const doctor = json(['doctor', '--workspace', root]);
-if (doctor.version !== '1.0.0' || doctor.safety !== 'fail-closed') throw new Error('Doctor did not report v1 safety defaults.');
+if (doctor.version !== '1.0.1' || doctor.safety !== 'fail-closed') throw new Error('Doctor did not report v1 safety defaults.');
+const demo = run(['demo']);
+if (!demo.includes('offline checks passed') || !demo.includes('coding fixture repair')) throw new Error('Offline demo did not complete its verified flow.');
 const benchmark = json(['benchmark']);
 if (benchmark.passed !== benchmark.total || benchmark.total < 11) throw new Error(`Benchmark failed: ${benchmark.passed}/${benchmark.total}`);
 execFileSync('npm', ['test'], { cwd: root, stdio: 'inherit' });

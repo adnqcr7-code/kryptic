@@ -13,6 +13,7 @@
     "chat": "node src/cli.js chat",
     "test": "node --test test/**/*.test.js",
     "benchmark": "node src/benchmark-runner.js",
+    "demo": "node src/cli.js demo",
     "v1:test": "node scripts/v1-check.mjs"
   }
 }

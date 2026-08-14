@@ -34,6 +34,7 @@ Quick commands:
   kryptic history                        Show recent runs
   kryptic skills [query]                 List/search verified skills
   kryptic inspect | search | benchmark   Inspect, search, or benchmark
+  kryptic demo                           Run the offline demo without an API key
   kryptic version                         Print the v1 version
 
 Advanced:
@@ -124,13 +125,18 @@ async function main() {
   const args = process.argv.slice(2);
   let command = args[0];
   if (!command || command === '--help' || command === '-h') return console.log(HELP);
-  if (command === '--version' || command === 'version') return console.log('Kryptic v1.0.0');
-  const known = new Set(['providers', 'inspect', 'search', 'skills', 'ask', 'run', 'fix', 'test', 'doctor', 'setup', 'chat', 'start', 'history', 'benchmark', 'resume']);
+  if (command === '--version' || command === 'version') return console.log('Kryptic v1.0.1');
+  const known = new Set(['providers', 'inspect', 'search', 'skills', 'ask', 'run', 'fix', 'test', 'doctor', 'setup', 'chat', 'start', 'history', 'benchmark', 'demo', 'resume']);
   if (!known.has(command) && !command.startsWith('-')) { args.unshift('run'); command = 'run'; }
   if (command === 'providers') return console.log(JSON.stringify(listProviders(), null, 2));
   if (command === 'benchmark') {
     const { runDeterministicBenchmark } = await import('./benchmark-runner.js');
     return console.log(JSON.stringify(await runDeterministicBenchmark(), null, 2));
+  }
+  if (command === 'demo') {
+    const { runOfflineDemo } = await import('./demo.js');
+    await runOfflineDemo();
+    return;
   }
   const workspace = createWorkspace(argValue(args, '--workspace', process.cwd()));
   await loadSavedSecrets();

@@ -483,7 +483,7 @@ test('setup diagnostics report runtime, providers, tests, and browser state with
   const workspace = createWorkspace(root);
   await workspace.writeFile('package.json', '{"scripts":{"test":"node --test"}}');
   const result = await runSetupChecks(workspace);
-  assert.equal(result.version, '1.0.0');
+  assert.equal(result.version, '1.0.1');
   assert.ok(result.checks.node.status === 'ready');
   assert.ok(result.checks.providers.available.every((provider) => !('key' in provider)));
   assert.equal(result.checks.tests.command, 'npm test');

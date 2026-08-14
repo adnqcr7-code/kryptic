@@ -57,5 +57,5 @@ export async function runSetupChecks(workspace) {
   if (!testCommand) warnings.push('No supported project test contract was discovered.');
   if (dependencies.status === 'needs_install') warnings.push(`${dependencies.declared} npm dependencies are declared but not installed.`);
   if (browserBridge.status !== 'configured') warnings.push('Browser bridge is not configured; browser capabilities remain unavailable.');
-  return { version: '1.0.0', status: blocking ? 'blocked' : warnings.length ? 'needs_attention' : 'ready', safety: 'fail-closed', workspace: workspaceRoot, checks, warnings, next: warnings.length ? 'Fix the warnings above, then run setup again.' : 'Kryptic is ready for chat and bounded runs.' };
+  return { version: '1.0.1', status: blocking ? 'blocked' : warnings.length ? 'needs_attention' : 'ready', safety: 'fail-closed', workspace: workspaceRoot, checks, warnings, next: warnings.length ? 'Fix the warnings above, then run setup again.' : 'Kryptic is ready for chat and bounded runs.' };
 }

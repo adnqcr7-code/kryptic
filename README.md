@@ -42,9 +42,10 @@ node src/cli.js fix "repair the failing test and verify it"
 node src/cli.js test
 node src/cli.js doctor
 node src/cli.js history
+npm run demo
 ```
 
-See [`V1-AGENT-TEST.md`](V1-AGENT-TEST.md) for the agent-test contract and acceptance criteria. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for safe contribution expectations and [`SECURITY.md`](SECURITY.md) for the prototype’s threat-model boundaries.
+See [`DEMO.md`](DEMO.md) for the five-minute walkthrough and offline demo. See [`ROADMAP.md`](ROADMAP.md) for measurable next milestones. See [`V1-AGENT-TEST.md`](V1-AGENT-TEST.md) for the agent-test contract and acceptance criteria. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for safe contribution expectations and [`SECURITY.md`](SECURITY.md) for the prototype’s threat-model boundaries.
 
 ## Brand assets
 
@@ -69,6 +70,7 @@ The project is an early local prototype. It currently provides:
 | Exact-match patching and approval-gated edits | Available |
 | Run-history audit records | Available |
 | Provenance-aware local memory | Available |
+| Offline demo without an API key | Available |
 | Deterministic safety benchmark | Available |
 | Interactive approvals | Available in TTY mode |
 | Resumable run statuses and audit events | Available |
