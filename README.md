@@ -110,7 +110,7 @@ The `--repair` run mode now connects provider-generated replacement plans to the
 
 ## Get involved
 
-The most useful early contribution is a reproducible issue or a small fixture that reveals a safety, repair, provider, browser, or cross-platform failure. Please use the [bug template](.github/ISSUE_TEMPLATE/bug_report.md) or [feature template](.github/ISSUE_TEMPLATE/feature_request.md). Testers can use the [feedback form](FEEDBACK.md) to report onboarding friction and structured evidence. Do not coordinate votes or post API keys. The [Show HN draft](SHOW-HN-DRAFT.md) explains the current scope and open benchmark questions.
+The most useful early contribution is a reproducible issue or a small fixture that reveals a safety, repair, provider, browser, or cross-platform failure. Please use the [bug template](.github/ISSUE_TEMPLATE/bug_report.md) or [feature template](.github/ISSUE_TEMPLATE/feature_request.md). Testers can use the [feedback form](FEEDBACK.md) to report onboarding friction and structured evidence. Do not coordinate votes or post API keys.
 
 ## Source material
 
