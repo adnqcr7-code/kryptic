@@ -109,3 +109,7 @@ The most useful early contribution is a reproducible issue or a small fixture th
 
 The older [Kairos repository](https://github.com/adnqcr7-code/kairos) is kept in a separate reference directory during development. Kryptic will reuse sound local-first and safety patterns without copying the entire Kairos control plane.
 
+## Website
+
+The Kryptic website is hosted separately from this repository: https://kryptic-site-meme-56ed.vercel.app
+
