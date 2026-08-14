@@ -1,0 +1,20 @@
+:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { width: 360px; margin: 0; color: #e7f1ff; background: #071120; }
+header { display: flex; align-items: center; gap: 10px; padding: 16px; border-bottom: 1px solid #173151; background: linear-gradient(135deg, #0b1c36, #071120); }
+.brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; color: white; background: #1478ec; font-weight: 800; box-shadow: 0 0 18px rgba(20,120,236,.45); }
+h1 { margin: 0; font-size: 16px; } header p { margin: 2px 0 0; color: #8ca6c8; font-size: 11px; }
+.status-pill { margin-left: auto; border: 1px solid #245383; border-radius: 999px; color: #84c3ff; padding: 5px 8px; font-size: 10px; }
+main { padding: 14px; }
+.card { padding: 12px; border: 1px solid #173151; border-radius: 12px; background: #0a192e; }
+.section-title { color: #73b9ff; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.page-title { margin-top: 8px; overflow: hidden; font-size: 14px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.muted { margin-top: 5px; overflow: hidden; color: #8ca6c8; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.controls { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+button { border: 1px solid #245383; border-radius: 9px; padding: 9px 10px; color: #dceeff; background: #0c213d; cursor: pointer; font-size: 11px; font-weight: 700; }
+button:hover { border-color: #56aaff; background: #12345d; } button:disabled { cursor: not-allowed; opacity: .4; }
+button.primary { border-color: #2b8cff; background: #1478ec; } button.primary:hover { background: #0d64c8; }
+.scroll-controls { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 12px 0; color: #8ca6c8; font-size: 11px; }
+.scroll-controls button { width: 38px; padding: 8px; font-size: 16px; }
+.output { min-height: 78px; max-height: 150px; overflow: auto; margin: 0; padding: 10px; border: 1px solid #173151; border-radius: 10px; color: #a8d2ff; background: #050d19; font: 11px/1.45 ui-monospace, monospace; white-space: pre-wrap; }
+footer { display: flex; justify-content: space-between; padding: 10px 14px 13px; color: #6f8dad; border-top: 1px solid #173151; font-size: 10px; }

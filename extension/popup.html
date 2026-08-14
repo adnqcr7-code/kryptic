@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kryptic</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><div class="brand-mark">K</div><div><h1>Kryptic</h1><p>Browser control</p></div><span id="connection" class="status-pill">Local</span></header>
+  <main>
+    <section class="card"><div class="section-title">Current page</div><div id="page-title" class="page-title">Not inspected yet</div><div id="page-url" class="muted">Open a page and inspect it.</div></section>
+    <section class="controls"><button id="inspect" class="primary">Inspect page</button><button id="working" class="secondary">Show working overlay</button><button id="takeover" class="secondary">Take over</button><button id="handback" class="secondary" disabled>Hand back</button></section>
+    <section class="scroll-controls"><button id="scroll-up" aria-label="Scroll up">↑</button><span>Scroll page</span><button id="scroll-down" aria-label="Scroll down">↓</button></section>
+    <pre id="output" class="output" aria-live="polite">Kryptic is ready. Inspection and control require explicit actions.</pre>
+  </main>
+  <footer><span>Permission-first mode</span><span id="bridge">Bridge: checking…</span></footer>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+#kryptic-overlay-root {
+  all: initial;
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  pointer-events: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#kryptic-overlay-root.kryptic-takeover #kryptic-wave,
+#kryptic-overlay-root.kryptic-working #kryptic-wave { display: block; }
+
+#kryptic-wave {
+  display: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: .3;
+}
+
+#kryptic-wave::before,
+#kryptic-wave::after {
+  content: "";
+  position: absolute;
+  width: 150vw;
+  height: 150px;
+  left: -25vw;
+  top: 40%;
+  border: 2px solid #2684ff;
+  border-radius: 50%;
+  transform: rotate(-8deg) translateY(0);
+  filter: drop-shadow(0 0 12px #2684ff);
+  animation: kryptic-wave 3.2s ease-in-out infinite;
+}
+
+#kryptic-wave::after {
+  top: 48%;
+  opacity: .45;
+  animation-delay: -1.6s;
+}
+
+#kryptic-status {
+  pointer-events: auto;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e9f3ff;
+  background: rgba(8, 18, 38, .92);
+  border: 1px solid rgba(74, 157, 255, .7);
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, .28), 0 0 24px rgba(38, 132, 255, .22);
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+}
+
+#kryptic-status button {
+  border: 0;
+  border-radius: 8px;
+  padding: 7px 10px;
+  color: white;
+  background: #1677e8;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#kryptic-status button:hover { background: #0d64c8; }
+
+.kryptic-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2e9bff;
+  box-shadow: 0 0 10px #2e9bff;
+}
+
+@keyframes kryptic-wave {
+  0%, 100% { transform: rotate(-8deg) translateY(-18px) scaleX(.92); opacity: .2; }
+  50% { transform: rotate(-8deg) translateY(18px) scaleX(1.05); opacity: .8; }
+}

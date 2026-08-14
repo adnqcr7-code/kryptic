@@ -1,0 +1,15 @@
+{
+  "name": "kryptic",
+  "version": "1.0.0",
+  "private": true,
+  "bin": { "kryptic": "src/cli.js" },
+  "description": "Local-first AI coding agent CLI",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "kryptic": "node src/cli.js",
+    "test": "node --test test/**/*.test.js",
+    "benchmark": "node src/benchmark-runner.js",
+    "v1:test": "node scripts/v1-check.mjs"
+  }
+}

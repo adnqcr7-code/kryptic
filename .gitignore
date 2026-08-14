@@ -1,0 +1,8 @@
+node_modules/
+.kryptic/
+reference/
+*.zip
+.env
+.env.*
+!.env.example
+*.log

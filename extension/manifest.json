@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Kryptic Browser Control",
+  "version": "0.1.0",
+  "description": "Permission-first webpage inspection and user-controlled browser handoff for Kryptic.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": ["http://127.0.0.1:8765/*", "http://localhost:8765/*"],
+  "action": {
+    "default_title": "Kryptic",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "toggle-takeover": {
+      "suggested_key": { "default": "Ctrl+Shift+K" },
+      "description": "Toggle Kryptic browser takeover"
+    }
+  }
+}

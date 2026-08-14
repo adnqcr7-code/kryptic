@@ -1,0 +1,8 @@
+{
+  "name": "kryptic-repair-node-fixture",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
