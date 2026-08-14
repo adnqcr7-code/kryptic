@@ -123,5 +123,7 @@ The older [Kairos repository](https://github.com/adnqcr7-code/kairos) is kept in
 
 ## Website
 
-The Kryptic project website lives in the [`website/`](./website) directory and is deployed from the same repository.
+The Kryptic project website lives in the [`website/`](./website) directory and is deployed on Vercel.
+
+**Live site:** https://kryptic-site-meme-56ed.vercel.app
 
