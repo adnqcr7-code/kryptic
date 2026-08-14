@@ -4,6 +4,13 @@
 [![Tests](https://img.shields.io/badge/tests-42%2F42%20passing-0b84f3)](https://github.com/adnqcr7-code/kryptic/actions)
 [![Benchmark](https://img.shields.io/badge/benchmark-11%2F11%20passing-00a6a6)](benchmark.md)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-339933)](https://nodejs.org/)
+[![Latest release](https://img.shields.io/github/v/release/adnqcr7-code/kryptic?display_name=tag&sort=semver)](https://github.com/adnqcr7-code/kryptic/releases/latest)
+[![Last commit](https://img.shields.io/github/last-commit/adnqcr7-code/kryptic?branch=master)](https://github.com/adnqcr7-code/kryptic/commits/master/)
+[![Stars](https://img.shields.io/github/stars/adnqcr7-code/kryptic?style=flat)](https://github.com/adnqcr7-code/kryptic/stargazers)
+[![Forks](https://img.shields.io/github/forks/adnqcr7-code/kryptic?style=flat)](https://github.com/adnqcr7-code/kryptic/network/members)
+[![Open issues](https://img.shields.io/github/issues/adnqcr7-code/kryptic)](https://github.com/adnqcr7-code/kryptic/issues)
+[![Language](https://img.shields.io/github/languages/top/adnqcr7-code/kryptic)](https://github.com/adnqcr7-code/kryptic)
+
 
 Kryptic v1 is a local-first AI engineering agent CLI. It prioritizes a reliable workspace boundary, focused repository inspection, provider separation, direct command execution, bounded repair, verified skills, and evidence-based tests before any hosted interface is added. It runs on your own computer, uses your own provider keys, and does not require a hosted Kryptic account.
 
