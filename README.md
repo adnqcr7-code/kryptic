@@ -5,14 +5,6 @@
 [![Benchmark](https://img.shields.io/badge/benchmark-11%2F11%20passing-00a6a6)](benchmark.md)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-339933)](https://nodejs.org/)
 
-<p align="center">
-  <img src="assets/kryptic-readme-banner.png" alt="Kryptic — local-first AI engineering agent" width="100%">
-</p>
-
-<p align="center">
-  <img src="assets/kryptic-logo.png" alt="Kryptic logo" width="120">
-</p>
-
 Kryptic v1 is a local-first AI engineering agent CLI. It prioritizes a reliable workspace boundary, focused repository inspection, provider separation, direct command execution, bounded repair, verified skills, and evidence-based tests before any hosted interface is added. It runs on your own computer, uses your own provider keys, and does not require a hosted Kryptic account.
 
 ## Quick start
@@ -46,10 +38,6 @@ npm run demo
 ```
 
 See [`DEMO.md`](DEMO.md) for the five-minute walkthrough and offline demo. See [`ROADMAP.md`](ROADMAP.md) for measurable next milestones. See [`V1-AGENT-TEST.md`](V1-AGENT-TEST.md) for the agent-test contract and acceptance criteria. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for safe contribution expectations and [`SECURITY.md`](SECURITY.md) for the prototype’s threat-model boundaries.
-
-## Brand assets
-
-The repository includes a cohesive README banner and standalone logo in [`assets/`](assets/). The visual identity uses a restrained midnight-navy, electric-blue, and cyan palette to communicate local execution, cryptographic boundaries, and disciplined engineering rather than consumer-chat styling.
 
 ## Current status
 
@@ -120,10 +108,4 @@ The most useful early contribution is a reproducible issue or a small fixture th
 ## Source material
 
 The older [Kairos repository](https://github.com/adnqcr7-code/kairos) is kept in a separate reference directory during development. Kryptic will reuse sound local-first and safety patterns without copying the entire Kairos control plane.
-
-## Website
-
-The Kryptic project website lives in the [`website/`](./website) directory and is deployed on Vercel.
-
-**Live site:** https://kryptic-site-meme-56ed.vercel.app
 

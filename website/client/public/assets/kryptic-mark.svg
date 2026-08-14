@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
-  <title id="title">Kryptic mark</title>
-  <desc id="desc">Angular graphite K mark with a lime verification square</desc>
-  <path fill="#26323b" d="M29 7h70L65 48l-9 9 9 9 34 40H29l-28-40 28-28z"/>
-  <path fill="#4d687a" d="M29 7 1 35l28 31 28-9 8-9-8-9z"/>
-  <path fill="#f7f0d8" d="m1 35 27 31 12-5L13 30zM1 72l27 34 12-6L13 66z"/>
-  <rect x="29" y="51" width="28" height="28" fill="#c8f24a"/>
-  <path fill="#26323b" d="M29 106h70L65 72l-9-9-9 9z"/>
-</svg>
