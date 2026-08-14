@@ -8,6 +8,9 @@
   "engines": { "node": ">=20" },
   "scripts": {
     "kryptic": "node src/cli.js",
+    "start": "node src/cli.js start",
+    "setup": "node src/cli.js setup",
+    "chat": "node src/cli.js chat",
     "test": "node --test test/**/*.test.js",
     "benchmark": "node src/benchmark-runner.js",
     "v1:test": "node scripts/v1-check.mjs"

@@ -1,5 +1,10 @@
 # Kryptic
 
+[![CI](https://github.com/adnqcr7-code/kryptic/actions/workflows/ci.yml/badge.svg)](https://github.com/adnqcr7-code/kryptic/actions/workflows/ci.yml)
+[![Tests](https://img.shields.io/badge/tests-42%2F42%20passing-0b84f3)](https://github.com/adnqcr7-code/kryptic/actions)
+[![Benchmark](https://img.shields.io/badge/benchmark-11%2F11%20passing-00a6a6)](benchmark.md)
+[![Node](https://img.shields.io/badge/node-%3E%3D20-339933)](https://nodejs.org/)
+
 <p align="center">
   <img src="assets/kryptic-readme-banner.png" alt="Kryptic — local-first AI engineering agent" width="100%">
 </p>
@@ -8,11 +13,20 @@
   <img src="assets/kryptic-logo.png" alt="Kryptic logo" width="120">
 </p>
 
-Kryptic v1 is a local-first AI engineering agent CLI. It prioritizes a reliable workspace boundary, focused repository inspection, provider separation, safe command execution, bounded repair, verified skills, and evidence-based tests before any hosted interface is added.
+Kryptic v1 is a local-first AI engineering agent CLI. It prioritizes a reliable workspace boundary, focused repository inspection, provider separation, direct command execution, bounded repair, verified skills, and evidence-based tests before any hosted interface is added. It runs on your own computer, uses your own provider keys, and does not require a hosted Kryptic account.
 
 ## Quick start
 
-Run the complete local v1 release check with one command:
+The fastest path for a fresh checkout is:
+
+```bash
+git clone https://github.com/adnqcr7-code/kryptic.git
+cd kryptic
+npm run v1:test
+node src/cli.js start
+```
+
+The first interactive start asks for a provider, stores the key outside the workspace, checks local prerequisites, and opens chat. Run the complete local v1 release check with one command:
 
 ```bash
 npm run v1:test
@@ -30,7 +44,7 @@ node src/cli.js doctor
 node src/cli.js history
 ```
 
-See [`V1-AGENT-TEST.md`](V1-AGENT-TEST.md) for the agent-test contract and acceptance criteria.
+See [`V1-AGENT-TEST.md`](V1-AGENT-TEST.md) for the agent-test contract and acceptance criteria. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for safe contribution expectations and [`SECURITY.md`](SECURITY.md) for the prototype’s threat-model boundaries.
 
 ## Brand assets
 
@@ -96,6 +110,10 @@ Kryptic resolves paths against the selected workspace and rejects traversal outs
 ## Planned next milestone
 
 The `--repair` run mode now connects provider-generated replacement plans to the bounded repair loop while preserving schema validation, approvals, rollback, and evidence-based success criteria. Verified procedural skills can be promoted only from `status: verified` evidence and discovered with `skills`. The model must never be allowed to invent a successful test result; verification comes from the local executor.
+
+## Get involved
+
+The most useful early contribution is a reproducible issue or a small fixture that reveals a safety, repair, provider, browser, or cross-platform failure. Please use the [bug template](.github/ISSUE_TEMPLATE/bug_report.md) or [feature template](.github/ISSUE_TEMPLATE/feature_request.md), and do not coordinate votes or post API keys. The [Show HN draft](SHOW-HN-DRAFT.md) explains the current scope and open benchmark questions.
 
 ## Source material
 
