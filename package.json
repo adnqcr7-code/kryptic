@@ -1,6 +1,7 @@
 {
   "name": "kryptic",
   "version": "1.0.1",
+  "license": "MIT",
   "private": true,
   "bin": { "kryptic": "src/cli.js" },
   "description": "Local-first AI coding agent CLI",
